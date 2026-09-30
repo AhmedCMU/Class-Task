@@ -27,6 +27,7 @@ def play_game(secret_number, guess):
   
 def get_guess(guess):
     return int(guess)
+  
 def run_game():
     secret_number = generate_number()
 
@@ -43,4 +44,5 @@ def run_game():
 
         if result == "Correct":
             break
-run_game()
+if __name__ == "__main__":
+    run_game()
